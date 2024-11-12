@@ -1,0 +1,173 @@
+.bannerS{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+    
+}
+.plano2{
+    background-color: var(--gelo);
+}
+
+.bannerS_titulo{
+    font-size: 2.4rem;
+    margin: 2rem 0;
+}
+
+.bannerS h2{
+    font-family: var(--fontS);
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.bannerT_p{
+    margin: 2rem 0;
+}
+
+footer{
+    background-color: var(--preto);
+    text-align: center;
+    padding: 2rem 3rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    max-width: 40%;
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    .bannerS{
+        display: grid;
+        grid-template-columns: 40vw 25vw;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "img titulo"
+        "img paragrafo";
+    }
+
+    .plano2{
+        display: grid;
+        grid-template-columns: 25vw 40vw;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "titulo img"
+        "paragrafo img";
+    }
+
+    .banner_img{
+        grid-area: img;
+        justify-self: end;
+    }
+
+    .bannerS_titulo{
+        grid-area: titulo;
+        justify-self: start;
+        align-self: end;
+        font-size: 3.8rem;
+    }
+
+    .bannerS p{
+        grid-area: paragrafo;
+        justify-self: start;
+        font-size: 1.6rem;
+    }
+
+    .bannerT{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 20rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bannerT h2{
+        font-size: 3.8rem;
+        white-space: pre-line;
+    }
+
+    .bannerT p{
+        font-size: 1.6rem;
+    }
+
+    .bannerT img{
+        max-width: 50%;
+        
+    }
+
+    footer{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1300px){
+
+    .bannerS{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "img titulo"
+        "img paragrafo";
+        padding: 3rem 5rem;
+    }
+
+    .plano2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "titulo img"
+        "paragrafo img";
+    }
+
+    .banner_img{
+        grid-area: img;
+        justify-self: end;
+    }
+
+    .bannerS_titulo{
+        grid-area: titulo;
+        justify-self: start;
+        align-self: end;
+        font-size: 2.6rem;
+    }
+
+    .bannerS p{
+        grid-area: paragrafo;
+        justify-self: start;
+        font-size: 1.5rem;
+    }
+
+    .bannerT{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 10rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bannerT h2{
+        font-size: 2.6rem;
+        white-space: pre-line;
+    }
+
+    .bannerT p{
+        font-size: 1.5rem;
+    }
+
+    .bannerT img{
+        width: min-content;
+    }
+
+    footer{
+        height: auto;
+    }
+}
+

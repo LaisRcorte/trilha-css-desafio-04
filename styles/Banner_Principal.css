@@ -1,0 +1,80 @@
+.bannerP{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-image: url(/assets/img/HeaderBackground.png);
+    background-position: 74% bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding: 5rem 2rem ;
+}
+
+.bannerP h1{
+    font-family: var(--fontS);
+    font-size: 3rem;
+    color: var(--branco);
+    text-align: left;
+    white-space: pre-line;
+    font-weight: 100;
+}
+
+.bannerP p{
+    color: var(--branco);
+    text-align: left;
+    margin: 3.2rem 0;
+}
+
+.bannerP div{
+    text-align: center;
+}
+
+.botao{
+    color: var(--preto);
+    border-radius: 28px;
+    background-color: var(--branco);
+    width: 90vw;
+    height: 45px;
+    border: 0;
+    margin: 0 auto;
+}
+
+.botao-secundario{
+    background-color: var(--preto);
+    color: var(--branco);
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+
+    .bannerP{
+        font-size: 1.8rem;
+    }
+
+    .bannerP h1{
+        text-align: center;
+        font-size: 5.6rem;
+    }
+
+    .bannerP p{
+        text-align: center;
+        padding: 0 10rem;
+    }
+
+    .bannerP div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao{
+        width: auto;
+        height: auto;
+        padding: 1.5rem 3rem;
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .botao-secundario{
+       margin-left: 2rem;
+    }
+}
